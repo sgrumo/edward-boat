@@ -1,5 +1,10 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url('assets/BebasNeue-Regular.ttf');
+}
 .App {
   text-align: center;
+  font-family: BebasNeue;
 }
 
 .App-logo {

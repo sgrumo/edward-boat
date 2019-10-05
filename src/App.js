@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from './header/header';
+import Header from './header/Header';
+import VideosList from './videos-list/VideosList';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <body></body>
     </div>
   );
 }
