@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './header/Header';
-import VideosList from './videos-list/VideosList';
+import Header from './header/header.js';
 
 function App() {
   return (
