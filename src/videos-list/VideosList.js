@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getVideos } from '../api/VimeoApi';
 
 const list = [
@@ -13,8 +13,10 @@ const list = [
 ];
 
 const VideosList = () => {
+  const [list, setList] = useState([]);
+
   useEffect(() => {
-    getVideos().then(res => console.log(res.data.data[0]));
+    getVideos().then(res => setList(res.data.data));
   }, []);
 
   const videos = list.map(listItem => (
